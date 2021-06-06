@@ -31,22 +31,22 @@ namespace QuanLySinhVienKTX
         {
             this.tabControlTang = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.tabPage5 = new System.Windows.Forms.TabPage();
-            this.tabPage6 = new System.Windows.Forms.TabPage();
-            this.tabPage7 = new System.Windows.Forms.TabPage();
-            this.tabPage8 = new System.Windows.Forms.TabPage();
-            this.tabPage9 = new System.Windows.Forms.TabPage();
             this.dgvTang1 = new System.Windows.Forms.DataGridView();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
             this.dgvTang2 = new System.Windows.Forms.DataGridView();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
             this.dgvTang3 = new System.Windows.Forms.DataGridView();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
             this.dgvTang4 = new System.Windows.Forms.DataGridView();
+            this.tabPage5 = new System.Windows.Forms.TabPage();
             this.dgvTang5 = new System.Windows.Forms.DataGridView();
+            this.tabPage6 = new System.Windows.Forms.TabPage();
             this.dgvTang6 = new System.Windows.Forms.DataGridView();
+            this.tabPage7 = new System.Windows.Forms.TabPage();
             this.dgvTang7 = new System.Windows.Forms.DataGridView();
+            this.tabPage8 = new System.Windows.Forms.TabPage();
             this.dgvTang8 = new System.Windows.Forms.DataGridView();
+            this.tabPage9 = new System.Windows.Forms.TabPage();
             this.dgvTang9 = new System.Windows.Forms.DataGridView();
             this.btnSinhVien = new System.Windows.Forms.Button();
             this.btnNhanVien = new System.Windows.Forms.Button();
@@ -56,22 +56,22 @@ namespace QuanLySinhVienKTX
             this.label1 = new System.Windows.Forms.Label();
             this.tabControlTang.SuspendLayout();
             this.tabPage1.SuspendLayout();
-            this.tabPage2.SuspendLayout();
-            this.tabPage3.SuspendLayout();
-            this.tabPage4.SuspendLayout();
-            this.tabPage5.SuspendLayout();
-            this.tabPage6.SuspendLayout();
-            this.tabPage7.SuspendLayout();
-            this.tabPage8.SuspendLayout();
-            this.tabPage9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTang1)).BeginInit();
+            this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTang2)).BeginInit();
+            this.tabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTang3)).BeginInit();
+            this.tabPage4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTang4)).BeginInit();
+            this.tabPage5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTang5)).BeginInit();
+            this.tabPage6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTang6)).BeginInit();
+            this.tabPage7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTang7)).BeginInit();
+            this.tabPage8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTang8)).BeginInit();
+            this.tabPage9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTang9)).BeginInit();
             this.SuspendLayout();
             // 
@@ -89,7 +89,7 @@ namespace QuanLySinhVienKTX
             this.tabControlTang.Controls.Add(this.tabPage7);
             this.tabControlTang.Controls.Add(this.tabPage8);
             this.tabControlTang.Controls.Add(this.tabPage9);
-            this.tabControlTang.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabControlTang.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabControlTang.Location = new System.Drawing.Point(12, 356);
             this.tabControlTang.Name = "tabControlTang";
             this.tabControlTang.SelectedIndex = 0;
@@ -100,7 +100,7 @@ namespace QuanLySinhVienKTX
             // tabPage1
             // 
             this.tabPage1.Controls.Add(this.dgvTang1);
-            this.tabPage1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
+            this.tabPage1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabPage1.Location = new System.Drawing.Point(4, 28);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
@@ -109,94 +109,6 @@ namespace QuanLySinhVienKTX
             this.tabPage1.Text = "Tầng 1";
             this.tabPage1.UseVisualStyleBackColor = true;
             this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
-            // 
-            // tabPage2
-            // 
-            this.tabPage2.Controls.Add(this.dgvTang2);
-            this.tabPage2.Location = new System.Drawing.Point(4, 28);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(662, 206);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Tầng 2";
-            this.tabPage2.UseVisualStyleBackColor = true;
-            // 
-            // tabPage3
-            // 
-            this.tabPage3.Controls.Add(this.dgvTang3);
-            this.tabPage3.Location = new System.Drawing.Point(4, 28);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(662, 206);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "Tầng 3";
-            this.tabPage3.UseVisualStyleBackColor = true;
-            // 
-            // tabPage4
-            // 
-            this.tabPage4.Controls.Add(this.dgvTang4);
-            this.tabPage4.Location = new System.Drawing.Point(4, 28);
-            this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(662, 206);
-            this.tabPage4.TabIndex = 3;
-            this.tabPage4.Text = "Tầng 4";
-            this.tabPage4.UseVisualStyleBackColor = true;
-            // 
-            // tabPage5
-            // 
-            this.tabPage5.Controls.Add(this.dgvTang5);
-            this.tabPage5.Location = new System.Drawing.Point(4, 28);
-            this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage5.Size = new System.Drawing.Size(662, 206);
-            this.tabPage5.TabIndex = 4;
-            this.tabPage5.Text = "Tầng 5";
-            this.tabPage5.UseVisualStyleBackColor = true;
-            // 
-            // tabPage6
-            // 
-            this.tabPage6.Controls.Add(this.dgvTang6);
-            this.tabPage6.Location = new System.Drawing.Point(4, 28);
-            this.tabPage6.Name = "tabPage6";
-            this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage6.Size = new System.Drawing.Size(662, 206);
-            this.tabPage6.TabIndex = 5;
-            this.tabPage6.Text = "Tầng 6";
-            this.tabPage6.UseVisualStyleBackColor = true;
-            // 
-            // tabPage7
-            // 
-            this.tabPage7.Controls.Add(this.dgvTang7);
-            this.tabPage7.Location = new System.Drawing.Point(4, 28);
-            this.tabPage7.Name = "tabPage7";
-            this.tabPage7.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage7.Size = new System.Drawing.Size(662, 206);
-            this.tabPage7.TabIndex = 6;
-            this.tabPage7.Text = "Tầng 7";
-            this.tabPage7.UseVisualStyleBackColor = true;
-            // 
-            // tabPage8
-            // 
-            this.tabPage8.Controls.Add(this.dgvTang8);
-            this.tabPage8.Location = new System.Drawing.Point(4, 28);
-            this.tabPage8.Name = "tabPage8";
-            this.tabPage8.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage8.Size = new System.Drawing.Size(662, 206);
-            this.tabPage8.TabIndex = 7;
-            this.tabPage8.Text = "Tầng 8";
-            this.tabPage8.UseVisualStyleBackColor = true;
-            // 
-            // tabPage9
-            // 
-            this.tabPage9.Controls.Add(this.dgvTang9);
-            this.tabPage9.Location = new System.Drawing.Point(4, 28);
-            this.tabPage9.Name = "tabPage9";
-            this.tabPage9.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage9.Size = new System.Drawing.Size(662, 206);
-            this.tabPage9.TabIndex = 8;
-            this.tabPage9.Text = "Tầng 9";
-            this.tabPage9.UseVisualStyleBackColor = true;
             // 
             // dgvTang1
             // 
@@ -208,6 +120,18 @@ namespace QuanLySinhVienKTX
             this.dgvTang1.Size = new System.Drawing.Size(656, 200);
             this.dgvTang1.TabIndex = 0;
             // 
+            // tabPage2
+            // 
+            this.tabPage2.Controls.Add(this.dgvTang2);
+            this.tabPage2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabPage2.Location = new System.Drawing.Point(4, 28);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(662, 206);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "Tầng 2";
+            this.tabPage2.UseVisualStyleBackColor = true;
+            // 
             // dgvTang2
             // 
             this.dgvTang2.BorderStyle = System.Windows.Forms.BorderStyle.None;
@@ -217,6 +141,18 @@ namespace QuanLySinhVienKTX
             this.dgvTang2.Name = "dgvTang2";
             this.dgvTang2.Size = new System.Drawing.Size(656, 200);
             this.dgvTang2.TabIndex = 1;
+            // 
+            // tabPage3
+            // 
+            this.tabPage3.Controls.Add(this.dgvTang3);
+            this.tabPage3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabPage3.Location = new System.Drawing.Point(4, 28);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Size = new System.Drawing.Size(662, 206);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "Tầng 3";
+            this.tabPage3.UseVisualStyleBackColor = true;
             // 
             // dgvTang3
             // 
@@ -228,6 +164,18 @@ namespace QuanLySinhVienKTX
             this.dgvTang3.Size = new System.Drawing.Size(656, 200);
             this.dgvTang3.TabIndex = 1;
             // 
+            // tabPage4
+            // 
+            this.tabPage4.Controls.Add(this.dgvTang4);
+            this.tabPage4.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabPage4.Location = new System.Drawing.Point(4, 28);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage4.Size = new System.Drawing.Size(662, 206);
+            this.tabPage4.TabIndex = 3;
+            this.tabPage4.Text = "Tầng 4";
+            this.tabPage4.UseVisualStyleBackColor = true;
+            // 
             // dgvTang4
             // 
             this.dgvTang4.BorderStyle = System.Windows.Forms.BorderStyle.None;
@@ -237,6 +185,18 @@ namespace QuanLySinhVienKTX
             this.dgvTang4.Name = "dgvTang4";
             this.dgvTang4.Size = new System.Drawing.Size(656, 200);
             this.dgvTang4.TabIndex = 1;
+            // 
+            // tabPage5
+            // 
+            this.tabPage5.Controls.Add(this.dgvTang5);
+            this.tabPage5.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabPage5.Location = new System.Drawing.Point(4, 28);
+            this.tabPage5.Name = "tabPage5";
+            this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage5.Size = new System.Drawing.Size(662, 206);
+            this.tabPage5.TabIndex = 4;
+            this.tabPage5.Text = "Tầng 5";
+            this.tabPage5.UseVisualStyleBackColor = true;
             // 
             // dgvTang5
             // 
@@ -248,6 +208,18 @@ namespace QuanLySinhVienKTX
             this.dgvTang5.Size = new System.Drawing.Size(656, 200);
             this.dgvTang5.TabIndex = 1;
             // 
+            // tabPage6
+            // 
+            this.tabPage6.Controls.Add(this.dgvTang6);
+            this.tabPage6.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabPage6.Location = new System.Drawing.Point(4, 28);
+            this.tabPage6.Name = "tabPage6";
+            this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage6.Size = new System.Drawing.Size(662, 206);
+            this.tabPage6.TabIndex = 5;
+            this.tabPage6.Text = "Tầng 6";
+            this.tabPage6.UseVisualStyleBackColor = true;
+            // 
             // dgvTang6
             // 
             this.dgvTang6.BorderStyle = System.Windows.Forms.BorderStyle.None;
@@ -257,6 +229,18 @@ namespace QuanLySinhVienKTX
             this.dgvTang6.Name = "dgvTang6";
             this.dgvTang6.Size = new System.Drawing.Size(656, 200);
             this.dgvTang6.TabIndex = 1;
+            // 
+            // tabPage7
+            // 
+            this.tabPage7.Controls.Add(this.dgvTang7);
+            this.tabPage7.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabPage7.Location = new System.Drawing.Point(4, 28);
+            this.tabPage7.Name = "tabPage7";
+            this.tabPage7.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage7.Size = new System.Drawing.Size(662, 206);
+            this.tabPage7.TabIndex = 6;
+            this.tabPage7.Text = "Tầng 7";
+            this.tabPage7.UseVisualStyleBackColor = true;
             // 
             // dgvTang7
             // 
@@ -268,6 +252,18 @@ namespace QuanLySinhVienKTX
             this.dgvTang7.Size = new System.Drawing.Size(656, 200);
             this.dgvTang7.TabIndex = 1;
             // 
+            // tabPage8
+            // 
+            this.tabPage8.Controls.Add(this.dgvTang8);
+            this.tabPage8.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabPage8.Location = new System.Drawing.Point(4, 28);
+            this.tabPage8.Name = "tabPage8";
+            this.tabPage8.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage8.Size = new System.Drawing.Size(662, 206);
+            this.tabPage8.TabIndex = 7;
+            this.tabPage8.Text = "Tầng 8";
+            this.tabPage8.UseVisualStyleBackColor = true;
+            // 
             // dgvTang8
             // 
             this.dgvTang8.BorderStyle = System.Windows.Forms.BorderStyle.None;
@@ -277,6 +273,18 @@ namespace QuanLySinhVienKTX
             this.dgvTang8.Name = "dgvTang8";
             this.dgvTang8.Size = new System.Drawing.Size(656, 200);
             this.dgvTang8.TabIndex = 1;
+            // 
+            // tabPage9
+            // 
+            this.tabPage9.Controls.Add(this.dgvTang9);
+            this.tabPage9.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabPage9.Location = new System.Drawing.Point(4, 28);
+            this.tabPage9.Name = "tabPage9";
+            this.tabPage9.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage9.Size = new System.Drawing.Size(662, 206);
+            this.tabPage9.TabIndex = 8;
+            this.tabPage9.Text = "Tầng 9";
+            this.tabPage9.UseVisualStyleBackColor = true;
             // 
             // dgvTang9
             // 
@@ -301,6 +309,7 @@ namespace QuanLySinhVienKTX
             this.btnSinhVien.TabIndex = 1;
             this.btnSinhVien.Text = "DANH SÁCH SINH VIÊN";
             this.btnSinhVien.UseVisualStyleBackColor = true;
+            this.btnSinhVien.Click += new System.EventHandler(this.btnSinhVien_Click);
             // 
             // btnNhanVien
             // 
@@ -373,7 +382,7 @@ namespace QuanLySinhVienKTX
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.Menu;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(240)))), ((int)(((byte)(226)))));
             this.ClientSize = new System.Drawing.Size(694, 606);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnThoat);
@@ -387,22 +396,22 @@ namespace QuanLySinhVienKTX
             this.Load += new System.EventHandler(this.frmMain_Load);
             this.tabControlTang.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
-            this.tabPage2.ResumeLayout(false);
-            this.tabPage3.ResumeLayout(false);
-            this.tabPage4.ResumeLayout(false);
-            this.tabPage5.ResumeLayout(false);
-            this.tabPage6.ResumeLayout(false);
-            this.tabPage7.ResumeLayout(false);
-            this.tabPage8.ResumeLayout(false);
-            this.tabPage9.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvTang1)).EndInit();
+            this.tabPage2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvTang2)).EndInit();
+            this.tabPage3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvTang3)).EndInit();
+            this.tabPage4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvTang4)).EndInit();
+            this.tabPage5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvTang5)).EndInit();
+            this.tabPage6.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvTang6)).EndInit();
+            this.tabPage7.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvTang7)).EndInit();
+            this.tabPage8.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvTang8)).EndInit();
+            this.tabPage9.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvTang9)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

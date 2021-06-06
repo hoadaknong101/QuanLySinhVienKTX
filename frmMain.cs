@@ -145,5 +145,11 @@ namespace QuanLySinhVienKTX
         {
             Application.Exit();
         }
+
+        private void btnSinhVien_Click(object sender, EventArgs e)
+        {
+            frmSinhVien frm = new frmSinhVien();
+            frm.Show();
+        }
     }
 }
