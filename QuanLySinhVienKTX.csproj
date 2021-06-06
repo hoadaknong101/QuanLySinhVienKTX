@@ -61,14 +61,14 @@
     <Compile Include="frmMain.Designer.cs">
       <DependentUpon>frmMain.cs</DependentUpon>
     </Compile>
-    <Compile Include="HopDong.cs" />
-    <Compile Include="NhanVien.cs" />
-    <Compile Include="Phong.cs" />
+    <Compile Include="Models\HopDong.cs" />
+    <Compile Include="Models\NhanVien.cs" />
+    <Compile Include="Models\Phong.cs" />
     <Compile Include="Program.cs" />
-    <Compile Include="QuanLy.cs" />
-    <Compile Include="SinhVien.cs" />
+    <Compile Include="Models\QuanLy.cs" />
+    <Compile Include="Models\SinhVien.cs" />
     <Compile Include="SVDB.cs" />
-    <Compile Include="sysdiagram.cs" />
+    <Compile Include="Models\sysdiagram.cs" />
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
     </EmbeddedResource>
