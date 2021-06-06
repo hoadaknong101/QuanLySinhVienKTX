@@ -29,9 +29,6 @@ namespace QuanLySinhVienKTX
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tabControlTang = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tabPage2 = new System.Windows.Forms.TabPage();
@@ -90,18 +87,18 @@ namespace QuanLySinhVienKTX
             this.tabControlTang.Location = new System.Drawing.Point(12, 295);
             this.tabControlTang.Name = "tabControlTang";
             this.tabControlTang.SelectedIndex = 0;
-            this.tabControlTang.Size = new System.Drawing.Size(976, 268);
+            this.tabControlTang.Size = new System.Drawing.Size(664, 268);
             this.tabControlTang.TabIndex = 0;
             this.tabControlTang.SelectedIndexChanged += new System.EventHandler(this.tabControlTang_SelectedIndexChanged);
             // 
             // tabPage1
             // 
             this.tabPage1.Controls.Add(this.dgvTang1);
-            this.tabPage1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabPage1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
             this.tabPage1.Location = new System.Drawing.Point(4, 28);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(968, 236);
+            this.tabPage1.Size = new System.Drawing.Size(656, 236);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Tầng 1";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -113,7 +110,7 @@ namespace QuanLySinhVienKTX
             this.tabPage2.Location = new System.Drawing.Point(4, 28);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(968, 236);
+            this.tabPage2.Size = new System.Drawing.Size(656, 236);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Tầng 2";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -124,7 +121,7 @@ namespace QuanLySinhVienKTX
             this.tabPage3.Location = new System.Drawing.Point(4, 28);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(968, 236);
+            this.tabPage3.Size = new System.Drawing.Size(656, 236);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Tầng 3";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -135,7 +132,7 @@ namespace QuanLySinhVienKTX
             this.tabPage4.Location = new System.Drawing.Point(4, 28);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(968, 236);
+            this.tabPage4.Size = new System.Drawing.Size(656, 236);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Tầng 4";
             this.tabPage4.UseVisualStyleBackColor = true;
@@ -146,7 +143,7 @@ namespace QuanLySinhVienKTX
             this.tabPage5.Location = new System.Drawing.Point(4, 28);
             this.tabPage5.Name = "tabPage5";
             this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage5.Size = new System.Drawing.Size(968, 236);
+            this.tabPage5.Size = new System.Drawing.Size(656, 236);
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "Tầng 5";
             this.tabPage5.UseVisualStyleBackColor = true;
@@ -157,7 +154,7 @@ namespace QuanLySinhVienKTX
             this.tabPage6.Location = new System.Drawing.Point(4, 28);
             this.tabPage6.Name = "tabPage6";
             this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage6.Size = new System.Drawing.Size(968, 236);
+            this.tabPage6.Size = new System.Drawing.Size(656, 236);
             this.tabPage6.TabIndex = 5;
             this.tabPage6.Text = "Tầng 6";
             this.tabPage6.UseVisualStyleBackColor = true;
@@ -168,7 +165,7 @@ namespace QuanLySinhVienKTX
             this.tabPage7.Location = new System.Drawing.Point(4, 28);
             this.tabPage7.Name = "tabPage7";
             this.tabPage7.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage7.Size = new System.Drawing.Size(968, 236);
+            this.tabPage7.Size = new System.Drawing.Size(656, 236);
             this.tabPage7.TabIndex = 6;
             this.tabPage7.Text = "Tầng 7";
             this.tabPage7.UseVisualStyleBackColor = true;
@@ -179,7 +176,7 @@ namespace QuanLySinhVienKTX
             this.tabPage8.Location = new System.Drawing.Point(4, 28);
             this.tabPage8.Name = "tabPage8";
             this.tabPage8.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage8.Size = new System.Drawing.Size(968, 236);
+            this.tabPage8.Size = new System.Drawing.Size(656, 236);
             this.tabPage8.TabIndex = 7;
             this.tabPage8.Text = "Tầng 8";
             this.tabPage8.UseVisualStyleBackColor = true;
@@ -190,7 +187,7 @@ namespace QuanLySinhVienKTX
             this.tabPage9.Location = new System.Drawing.Point(4, 28);
             this.tabPage9.Name = "tabPage9";
             this.tabPage9.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage9.Size = new System.Drawing.Size(968, 236);
+            this.tabPage9.Size = new System.Drawing.Size(656, 236);
             this.tabPage9.TabIndex = 8;
             this.tabPage9.Text = "Tầng 9";
             this.tabPage9.UseVisualStyleBackColor = true;
@@ -201,34 +198,10 @@ namespace QuanLySinhVienKTX
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvTang1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvTang1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvTang1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvTang1.DefaultCellStyle = dataGridViewCellStyle2;
             this.dgvTang1.Location = new System.Drawing.Point(6, 6);
             this.dgvTang1.Name = "dgvTang1";
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvTang1.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
-            this.dgvTang1.Size = new System.Drawing.Size(956, 224);
+            this.dgvTang1.Size = new System.Drawing.Size(644, 224);
             this.dgvTang1.TabIndex = 0;
             // 
             // dgvTang2
@@ -240,7 +213,7 @@ namespace QuanLySinhVienKTX
             this.dgvTang2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvTang2.Location = new System.Drawing.Point(6, 6);
             this.dgvTang2.Name = "dgvTang2";
-            this.dgvTang2.Size = new System.Drawing.Size(956, 224);
+            this.dgvTang2.Size = new System.Drawing.Size(644, 224);
             this.dgvTang2.TabIndex = 1;
             // 
             // dgvTang3
@@ -252,7 +225,7 @@ namespace QuanLySinhVienKTX
             this.dgvTang3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvTang3.Location = new System.Drawing.Point(6, 6);
             this.dgvTang3.Name = "dgvTang3";
-            this.dgvTang3.Size = new System.Drawing.Size(956, 224);
+            this.dgvTang3.Size = new System.Drawing.Size(644, 224);
             this.dgvTang3.TabIndex = 1;
             // 
             // dgvTang4
@@ -264,7 +237,7 @@ namespace QuanLySinhVienKTX
             this.dgvTang4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvTang4.Location = new System.Drawing.Point(6, 6);
             this.dgvTang4.Name = "dgvTang4";
-            this.dgvTang4.Size = new System.Drawing.Size(956, 224);
+            this.dgvTang4.Size = new System.Drawing.Size(644, 224);
             this.dgvTang4.TabIndex = 1;
             // 
             // dgvTang5
@@ -276,7 +249,7 @@ namespace QuanLySinhVienKTX
             this.dgvTang5.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvTang5.Location = new System.Drawing.Point(6, 6);
             this.dgvTang5.Name = "dgvTang5";
-            this.dgvTang5.Size = new System.Drawing.Size(956, 224);
+            this.dgvTang5.Size = new System.Drawing.Size(644, 224);
             this.dgvTang5.TabIndex = 1;
             // 
             // dgvTang6
@@ -288,7 +261,7 @@ namespace QuanLySinhVienKTX
             this.dgvTang6.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvTang6.Location = new System.Drawing.Point(6, 6);
             this.dgvTang6.Name = "dgvTang6";
-            this.dgvTang6.Size = new System.Drawing.Size(956, 224);
+            this.dgvTang6.Size = new System.Drawing.Size(644, 224);
             this.dgvTang6.TabIndex = 1;
             // 
             // dgvTang7
@@ -300,7 +273,7 @@ namespace QuanLySinhVienKTX
             this.dgvTang7.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvTang7.Location = new System.Drawing.Point(6, 6);
             this.dgvTang7.Name = "dgvTang7";
-            this.dgvTang7.Size = new System.Drawing.Size(956, 224);
+            this.dgvTang7.Size = new System.Drawing.Size(644, 224);
             this.dgvTang7.TabIndex = 1;
             // 
             // dgvTang8
@@ -312,7 +285,7 @@ namespace QuanLySinhVienKTX
             this.dgvTang8.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvTang8.Location = new System.Drawing.Point(6, 6);
             this.dgvTang8.Name = "dgvTang8";
-            this.dgvTang8.Size = new System.Drawing.Size(956, 224);
+            this.dgvTang8.Size = new System.Drawing.Size(644, 224);
             this.dgvTang8.TabIndex = 1;
             // 
             // dgvTang9
@@ -324,17 +297,20 @@ namespace QuanLySinhVienKTX
             this.dgvTang9.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvTang9.Location = new System.Drawing.Point(6, 6);
             this.dgvTang9.Name = "dgvTang9";
-            this.dgvTang9.Size = new System.Drawing.Size(956, 224);
+            this.dgvTang9.Size = new System.Drawing.Size(644, 224);
             this.dgvTang9.TabIndex = 1;
             // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1000, 575);
+            this.ClientSize = new System.Drawing.Size(688, 575);
             this.Controls.Add(this.tabControlTang);
+            this.MaximumSize = new System.Drawing.Size(704, 614);
+            this.MinimumSize = new System.Drawing.Size(704, 614);
             this.Name = "frmMain";
-            this.Text = "Form1";
+            this.Text = "TRANG CHÍNH";
+            this.Load += new System.EventHandler(this.frmMain_Load);
             this.tabControlTang.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);
