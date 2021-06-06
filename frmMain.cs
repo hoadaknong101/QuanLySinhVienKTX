@@ -29,17 +29,14 @@ namespace QuanLySinhVienKTX
         {
             InitializeComponent();
         }
-
         private void tabPage1_Click(object sender, EventArgs e)
         {
 
         }
-
         private void tabControlTang_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }
-
         private void frmMain_Load(object sender, EventArgs e)
         {
             LoadDataToTabControl();
@@ -117,7 +114,6 @@ namespace QuanLySinhVienKTX
         {
 
         }
-
         private void btnThoat_Click(object sender, EventArgs e)
         {
             Application.Exit();
