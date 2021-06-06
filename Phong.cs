@@ -13,6 +13,7 @@ namespace QuanLySinhVienKTX
         public Phong()
         {
             HopDongs = new HashSet<HopDong>();
+            QuanLies = new HashSet<QuanLy>();
         }
 
         [Key]
@@ -25,5 +26,8 @@ namespace QuanLySinhVienKTX
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<HopDong> HopDongs { get; set; }
+
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<QuanLy> QuanLies { get; set; }
     }
 }

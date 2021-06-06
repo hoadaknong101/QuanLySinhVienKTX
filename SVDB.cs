@@ -5,10 +5,10 @@ using System.Linq;
 
 namespace QuanLySinhVienKTX
 {
-    public partial class QLSVBD : DbContext
+    public partial class SVDB : DbContext
     {
-        public QLSVBD()
-            : base("name=QLSVBD")
+        public SVDB()
+            : base("name=SVDB")
         {
         }
 
@@ -36,6 +36,11 @@ namespace QuanLySinhVienKTX
 
             modelBuilder.Entity<Phong>()
                 .HasMany(e => e.HopDongs)
+                .WithRequired(e => e.Phong)
+                .WillCascadeOnDelete(false);
+
+            modelBuilder.Entity<Phong>()
+                .HasMany(e => e.QuanLies)
                 .WithRequired(e => e.Phong)
                 .WillCascadeOnDelete(false);
 

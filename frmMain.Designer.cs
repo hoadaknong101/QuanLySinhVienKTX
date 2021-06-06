@@ -1,7 +1,7 @@
 ﻿
 namespace QuanLySinhVienKTX
 {
-    partial class Form1
+    partial class frmMain
     {
         /// <summary>
         /// Required designer variable.
@@ -156,13 +156,13 @@ namespace QuanLySinhVienKTX
             this.tabPage9.Text = "Tầng 9";
             this.tabPage9.UseVisualStyleBackColor = true;
             // 
-            // Form1
+            // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(936, 581);
             this.Controls.Add(this.tabControlTang);
-            this.Name = "Form1";
+            this.Name = "frmMain";
             this.Text = "Form1";
             this.tabControlTang.ResumeLayout(false);
             this.ResumeLayout(false);

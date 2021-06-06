@@ -19,6 +19,11 @@ namespace QuanLySinhVienKTX
         [StringLength(10)]
         public string MaNV { get; set; }
 
+        [Column(TypeName = "date")]
+        public DateTime? NgayNhan { get; set; }
+
         public virtual NhanVien NhanVien { get; set; }
+
+        public virtual Phong Phong { get; set; }
     }
 }
