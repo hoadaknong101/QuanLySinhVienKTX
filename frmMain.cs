@@ -13,6 +13,8 @@ namespace QuanLySinhVienKTX
     public partial class frmMain : Form
     {
         private SVDB db = new SVDB();
+
+        //Tạo danh sách phòng của từng tầng: có 9 tầng
         List<Phong> tang1 = new List<Phong>();
         List<Phong> tang2 = new List<Phong>();
         List<Phong> tang3 = new List<Phong>();
@@ -22,6 +24,7 @@ namespace QuanLySinhVienKTX
         List<Phong> tang7 = new List<Phong>();
         List<Phong> tang8 = new List<Phong>();
         List<Phong> tang9 = new List<Phong>();
+
         public frmMain()
         {
             InitializeComponent();
@@ -39,9 +42,9 @@ namespace QuanLySinhVienKTX
 
         private void frmMain_Load(object sender, EventArgs e)
         {
-            LoadData();
+            LoadDataToTabControl();
         }
-        private void LoadData()
+        private void LoadDataToTabControl()
         {
             dgvTang1.DataSource = tang1;
             dgvTang2.DataSource = tang2;
@@ -113,6 +116,11 @@ namespace QuanLySinhVienKTX
         private void GetData()
         {
 
+        }
+
+        private void btnThoat_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
