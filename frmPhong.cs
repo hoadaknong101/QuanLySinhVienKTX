@@ -47,6 +47,9 @@ namespace QuanLySinhVienKTX
         }
         private void Setting()
         {
+            btnHuy.Enabled = false;
+            btnLuu.Enabled = false;
+            btnXoa.Enabled = false;
             dgvTang1.Columns[0].HeaderText = "Số phòng";
             dgvTang1.Columns[0].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
             dgvTang1.Columns[2].HeaderText = "Sức chứa";
@@ -139,6 +142,144 @@ namespace QuanLySinhVienKTX
             tang7 = db.Phongs.Where(s => s.Tang == 7).ToList();
             tang8 = db.Phongs.Where(s => s.Tang == 8).ToList();
             tang9 = db.Phongs.Where(s => s.Tang == 9).ToList();
+        }
+
+        private void dgvTang1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            btnHuy.Enabled = true;
+            btnLuu.Enabled = true;
+            btnXoa.Enabled = true;
+            txtSoPhong.Text =  dgvTang1.CurrentRow.Cells[0].Value.ToString();
+            txtTang.Text = dgvTang1.CurrentRow.Cells[1].Value.ToString();
+            txtSLTD.Text = dgvTang1.CurrentRow.Cells[2].Value.ToString();
+        }
+
+        private void dgvTang2_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            btnHuy.Enabled = true;
+            btnLuu.Enabled = true;
+            btnXoa.Enabled = true;
+            txtSoPhong.Text = dgvTang2.CurrentRow.Cells[0].Value.ToString();
+            txtTang.Text = dgvTang2.CurrentRow.Cells[1].Value.ToString();
+            txtSLTD.Text = dgvTang2.CurrentRow.Cells[2].Value.ToString();
+        }
+
+        private void dgvTang3_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            btnHuy.Enabled = true;
+            btnLuu.Enabled = true;
+            btnXoa.Enabled = true;
+            txtSoPhong.Text = dgvTang3.CurrentRow.Cells[0].Value.ToString();
+            txtTang.Text = dgvTang3.CurrentRow.Cells[1].Value.ToString();
+            txtSLTD.Text = dgvTang3.CurrentRow.Cells[2].Value.ToString();
+        }
+
+        private void dgvTang4_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            btnHuy.Enabled = true;
+            btnLuu.Enabled = true;
+            btnXoa.Enabled = true;
+            txtSoPhong.Text = dgvTang4.CurrentRow.Cells[0].Value.ToString();
+            txtTang.Text = dgvTang4.CurrentRow.Cells[1].Value.ToString();
+            txtSLTD.Text = dgvTang4.CurrentRow.Cells[2].Value.ToString();
+        }
+
+        private void dgvTang5_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            btnHuy.Enabled = true;
+            btnLuu.Enabled = true;
+            btnXoa.Enabled = true;
+            txtSoPhong.Text = dgvTang5.CurrentRow.Cells[0].Value.ToString();
+            txtTang.Text = dgvTang5.CurrentRow.Cells[1].Value.ToString();
+            txtSLTD.Text = dgvTang5.CurrentRow.Cells[2].Value.ToString();
+        }
+
+        private void dgvTang6_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            btnHuy.Enabled = true;
+            btnLuu.Enabled = true;
+            btnXoa.Enabled = true;
+            txtSoPhong.Text = dgvTang6.CurrentRow.Cells[0].Value.ToString();
+            txtTang.Text = dgvTang6.CurrentRow.Cells[1].Value.ToString();
+            txtSLTD.Text = dgvTang6.CurrentRow.Cells[2].Value.ToString();
+        }
+
+        private void dgvTang7_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            btnHuy.Enabled = true;
+            btnLuu.Enabled = true;
+            btnXoa.Enabled = true;
+            txtSoPhong.Text = dgvTang7.CurrentRow.Cells[0].Value.ToString();
+            txtTang.Text = dgvTang7.CurrentRow.Cells[1].Value.ToString();
+            txtSLTD.Text = dgvTang7.CurrentRow.Cells[2].Value.ToString();
+        }
+
+        private void dgvTang8_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            btnHuy.Enabled = true;
+            btnLuu.Enabled = true;
+            btnXoa.Enabled = true;
+            txtSoPhong.Text = dgvTang8.CurrentRow.Cells[0].Value.ToString();
+            txtTang.Text = dgvTang8.CurrentRow.Cells[1].Value.ToString();
+            txtSLTD.Text = dgvTang8.CurrentRow.Cells[2].Value.ToString();
+        }
+
+        private void dgvTang9_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            btnHuy.Enabled = true;
+            btnLuu.Enabled = true;
+            btnXoa.Enabled = true;
+            txtSoPhong.Text = dgvTang9.CurrentRow.Cells[0].Value.ToString();
+            txtTang.Text = dgvTang9.CurrentRow.Cells[1].Value.ToString();
+            txtSLTD.Text = dgvTang9.CurrentRow.Cells[2].Value.ToString();
+        }
+
+        private void btnDong_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnHuy_Click(object sender, EventArgs e)
+        {
+            btnHuy.Enabled = false;
+            btnLuu.Enabled = false;
+            btnXoa.Enabled = false;
+        }
+
+        private void btnXoa_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Bạn có chắc không ?", "Xóa", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                var del = db.Phongs.Find(int.Parse(txtSoPhong.Text.Trim()));
+                db.Phongs.Remove(del);
+                db.SaveChanges();
+                GetData();
+                LoadDataToTabControl();
+            }
+        }
+
+        private void btnLuu_Click(object sender, EventArgs e)
+        {
+            var mod = db.Phongs.Find(int.Parse(txtSoPhong.Text.Trim()));
+            mod.SLTD = int.Parse(txtSLTD.Text.Trim());
+            mod.Tang = int.Parse(txtTang.Text.Trim());
+            db.SaveChanges();
+            GetData();
+            LoadDataToTabControl();
+        }
+
+        private void btnThem_Click(object sender, EventArgs e)
+        {
+            var x = new Phong()
+            {
+                SoPhong = int.Parse(txtSoPhong.Text.Trim()),
+                Tang = int.Parse(txtTang.Text.Trim()),
+                SLTD = int.Parse(txtSLTD.Text.Trim())
+            };
+            db.Phongs.Add(x);
+            db.SaveChanges();
+            GetData();
+            LoadDataToTabControl();
         }
     }
 }

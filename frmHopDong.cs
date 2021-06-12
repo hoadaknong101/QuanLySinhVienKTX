@@ -13,6 +13,7 @@ namespace QuanLySinhVienKTX
     public partial class frmHopDong : Form
     {
         private SVDB db = new SVDB();
+        private List<Phong> lsPhong;
         public frmHopDong()
         {
             InitializeComponent();
@@ -28,6 +29,10 @@ namespace QuanLySinhVienKTX
         private void LoadData()
         {
             dgvHopDong.DataSource = db.HopDongs.ToList();
+            lsPhong = db.Phongs.ToList();
+            cbbPhong.DataSource = lsPhong;
+            cbbPhong.DisplayMember = "SoPhong";
+            cbbPhong.ValueMember = "Tang";
             Setting();
         }
         private void Setting()
