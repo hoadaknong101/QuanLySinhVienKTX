@@ -106,7 +106,6 @@ namespace QuanLySinhVienKTX
                 btnXoa.Enabled = false;
             }
         }
-
         private void dgvNhanVien_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             if (dgvNhanVien.Rows.Count == 0)
