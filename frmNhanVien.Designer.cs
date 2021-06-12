@@ -47,6 +47,7 @@ namespace QuanLySinhVienKTX
             this.dgvNhanVien = new System.Windows.Forms.DataGridView();
             this.txtChucVu = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
+            this.btnXoa = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvNhanVien)).BeginInit();
             this.SuspendLayout();
             // 
@@ -166,9 +167,9 @@ namespace QuanLySinhVienKTX
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(61)))), ((int)(((byte)(89)))));
             this.label1.Location = new System.Drawing.Point(20, 91);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(58, 17);
+            this.label1.Size = new System.Drawing.Size(61, 17);
             this.label1.TabIndex = 24;
-            this.label1.Text = "MSSV :";
+            this.label1.Text = "MSNV :";
             // 
             // btnDong
             // 
@@ -177,7 +178,7 @@ namespace QuanLySinhVienKTX
             this.btnDong.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDong.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDong.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(61)))), ((int)(((byte)(89)))));
-            this.btnDong.Location = new System.Drawing.Point(495, 519);
+            this.btnDong.Location = new System.Drawing.Point(493, 519);
             this.btnDong.Name = "btnDong";
             this.btnDong.Size = new System.Drawing.Size(88, 50);
             this.btnDong.TabIndex = 23;
@@ -192,12 +193,13 @@ namespace QuanLySinhVienKTX
             this.btnHuy.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnHuy.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnHuy.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(61)))), ((int)(((byte)(89)))));
-            this.btnHuy.Location = new System.Drawing.Point(341, 519);
+            this.btnHuy.Location = new System.Drawing.Point(378, 519);
             this.btnHuy.Name = "btnHuy";
             this.btnHuy.Size = new System.Drawing.Size(88, 50);
             this.btnHuy.TabIndex = 22;
             this.btnHuy.Text = "HỦY";
             this.btnHuy.UseVisualStyleBackColor = true;
+            this.btnHuy.Click += new System.EventHandler(this.btnHuy_Click);
             // 
             // btnLuu
             // 
@@ -206,12 +208,13 @@ namespace QuanLySinhVienKTX
             this.btnLuu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLuu.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLuu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(61)))), ((int)(((byte)(89)))));
-            this.btnLuu.Location = new System.Drawing.Point(187, 519);
+            this.btnLuu.Location = new System.Drawing.Point(148, 519);
             this.btnLuu.Name = "btnLuu";
             this.btnLuu.Size = new System.Drawing.Size(88, 50);
             this.btnLuu.TabIndex = 21;
             this.btnLuu.Text = "LƯU";
             this.btnLuu.UseVisualStyleBackColor = true;
+            this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
             // 
             // btnThem
             // 
@@ -226,6 +229,7 @@ namespace QuanLySinhVienKTX
             this.btnThem.TabIndex = 20;
             this.btnThem.Text = "THÊM";
             this.btnThem.UseVisualStyleBackColor = true;
+            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
             // dgvNhanVien
             // 
@@ -236,6 +240,7 @@ namespace QuanLySinhVienKTX
             this.dgvNhanVien.Name = "dgvNhanVien";
             this.dgvNhanVien.Size = new System.Drawing.Size(585, 297);
             this.dgvNhanVien.TabIndex = 19;
+            this.dgvNhanVien.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvNhanVien_CellClick);
             // 
             // txtChucVu
             // 
@@ -258,11 +263,27 @@ namespace QuanLySinhVienKTX
             this.label8.TabIndex = 36;
             this.label8.Text = "DANH SÁCH NHÂN VIÊN";
             // 
+            // btnXoa
+            // 
+            this.btnXoa.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(61)))), ((int)(((byte)(89)))));
+            this.btnXoa.FlatAppearance.BorderSize = 3;
+            this.btnXoa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnXoa.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnXoa.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(61)))), ((int)(((byte)(89)))));
+            this.btnXoa.Location = new System.Drawing.Point(263, 519);
+            this.btnXoa.Name = "btnXoa";
+            this.btnXoa.Size = new System.Drawing.Size(88, 50);
+            this.btnXoa.TabIndex = 37;
+            this.btnXoa.Text = "XÓA";
+            this.btnXoa.UseVisualStyleBackColor = true;
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
+            // 
             // frmNhanVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(611, 584);
+            this.Controls.Add(this.btnXoa);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.txtChucVu);
             this.Controls.Add(this.label6);
@@ -310,5 +331,6 @@ namespace QuanLySinhVienKTX
         private System.Windows.Forms.DataGridView dgvNhanVien;
         private System.Windows.Forms.TextBox txtChucVu;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Button btnXoa;
     }
 }

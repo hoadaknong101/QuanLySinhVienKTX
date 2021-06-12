@@ -116,6 +116,7 @@ namespace QuanLySinhVienKTX
             txtMSSV.Clear();
             btnLuu.Enabled = false;
             btnHuy.Enabled = false;
+            btnXoa.Enabled = false;
         }
 
         private void btnDong_Click(object sender, EventArgs e)

@@ -56,7 +56,7 @@ namespace QuanLySinhVienKTX
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(61)))), ((int)(((byte)(89)))));
-            this.label8.Location = new System.Drawing.Point(214, 20);
+            this.label8.Location = new System.Drawing.Point(212, 20);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(251, 24);
             this.label8.TabIndex = 29;
