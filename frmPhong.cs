@@ -10,11 +10,9 @@ using System.Windows.Forms;
 
 namespace QuanLySinhVienKTX
 {
-    public partial class frmMain : Form
+    public partial class frmPhong : Form
     {
         private SVDB db = new SVDB();
-
-        //Tạo danh sách phòng của từng tầng: có 9 tầng
         List<Phong> tang1 = new List<Phong>();
         List<Phong> tang2 = new List<Phong>();
         List<Phong> tang3 = new List<Phong>();
@@ -24,20 +22,12 @@ namespace QuanLySinhVienKTX
         List<Phong> tang7 = new List<Phong>();
         List<Phong> tang8 = new List<Phong>();
         List<Phong> tang9 = new List<Phong>();
-
-        public frmMain()
+        public frmPhong()
         {
             InitializeComponent();
         }
-        private void tabPage1_Click(object sender, EventArgs e)
-        {
 
-        }
-        private void tabControlTang_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-        private void frmMain_Load(object sender, EventArgs e)
+        private void frmPhong_Load(object sender, EventArgs e)
         {
             GetData();
             LoadDataToTabControl();
@@ -64,6 +54,7 @@ namespace QuanLySinhVienKTX
             dgvTang1.Columns[3].Visible = false;
             dgvTang1.Columns[1].Visible = false;
             dgvTang1.Columns[4].Visible = false;
+            dgvTang1.EditMode = DataGridViewEditMode.EditProgrammatically;
 
             dgvTang2.Columns[0].HeaderText = "Số phòng";
             dgvTang2.Columns[0].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
@@ -72,6 +63,7 @@ namespace QuanLySinhVienKTX
             dgvTang2.Columns[3].Visible = false;
             dgvTang2.Columns[1].Visible = false;
             dgvTang2.Columns[4].Visible = false;
+            dgvTang2.EditMode = DataGridViewEditMode.EditProgrammatically;
 
             dgvTang3.Columns[0].HeaderText = "Số phòng";
             dgvTang3.Columns[0].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
@@ -80,6 +72,7 @@ namespace QuanLySinhVienKTX
             dgvTang3.Columns[3].Visible = false;
             dgvTang3.Columns[1].Visible = false;
             dgvTang3.Columns[4].Visible = false;
+            dgvTang3.EditMode = DataGridViewEditMode.EditProgrammatically;
 
             dgvTang4.Columns[0].HeaderText = "Số phòng";
             dgvTang4.Columns[0].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
@@ -88,6 +81,7 @@ namespace QuanLySinhVienKTX
             dgvTang4.Columns[3].Visible = false;
             dgvTang4.Columns[1].Visible = false;
             dgvTang4.Columns[4].Visible = false;
+            dgvTang4.EditMode = DataGridViewEditMode.EditProgrammatically;
 
             dgvTang5.Columns[0].HeaderText = "Số phòng";
             dgvTang5.Columns[0].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
@@ -96,6 +90,7 @@ namespace QuanLySinhVienKTX
             dgvTang5.Columns[3].Visible = false;
             dgvTang5.Columns[1].Visible = false;
             dgvTang5.Columns[4].Visible = false;
+            dgvTang5.EditMode = DataGridViewEditMode.EditProgrammatically;
 
             dgvTang6.Columns[0].HeaderText = "Số phòng";
             dgvTang6.Columns[0].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
@@ -104,6 +99,7 @@ namespace QuanLySinhVienKTX
             dgvTang6.Columns[3].Visible = false;
             dgvTang6.Columns[1].Visible = false;
             dgvTang6.Columns[4].Visible = false;
+            dgvTang6.EditMode = DataGridViewEditMode.EditProgrammatically;
 
             dgvTang7.Columns[0].HeaderText = "Số phòng";
             dgvTang7.Columns[0].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
@@ -112,6 +108,7 @@ namespace QuanLySinhVienKTX
             dgvTang7.Columns[3].Visible = false;
             dgvTang7.Columns[1].Visible = false;
             dgvTang7.Columns[4].Visible = false;
+            dgvTang7.EditMode = DataGridViewEditMode.EditProgrammatically;
 
             dgvTang8.Columns[0].HeaderText = "Số phòng";
             dgvTang8.Columns[0].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
@@ -120,6 +117,7 @@ namespace QuanLySinhVienKTX
             dgvTang8.Columns[3].Visible = false;
             dgvTang8.Columns[1].Visible = false;
             dgvTang8.Columns[4].Visible = false;
+            dgvTang8.EditMode = DataGridViewEditMode.EditProgrammatically;
 
             dgvTang9.Columns[0].HeaderText = "Số phòng";
             dgvTang9.Columns[0].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
@@ -128,6 +126,7 @@ namespace QuanLySinhVienKTX
             dgvTang9.Columns[3].Visible = false;
             dgvTang9.Columns[1].Visible = false;
             dgvTang9.Columns[4].Visible = false;
+            dgvTang9.EditMode = DataGridViewEditMode.EditProgrammatically;
         }
         private void GetData()
         {
@@ -140,32 +139,6 @@ namespace QuanLySinhVienKTX
             tang7 = db.Phongs.Where(s => s.Tang == 7).ToList();
             tang8 = db.Phongs.Where(s => s.Tang == 8).ToList();
             tang9 = db.Phongs.Where(s => s.Tang == 9).ToList();
-        }
-        private void btnThoat_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
-        private void btnSinhVien_Click(object sender, EventArgs e)
-        {
-            frmSinhVien frm = new frmSinhVien();
-            frm.Show();
-        }
-
-        private void btnPhong_Click(object sender, EventArgs e)
-        {
-            frmPhong frm = new frmPhong();
-            frm.ShowDialog();
-        }
-
-        private void btnHopDong_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnNhanVien_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
