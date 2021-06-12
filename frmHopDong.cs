@@ -145,6 +145,7 @@ namespace QuanLySinhVienKTX
             cbbPhong.Text = dgvHopDong.CurrentRow.Cells[3].Value.ToString();
             btnLuu.Enabled = true;
             btnHuy.Enabled = true;
+            btnXoa.Enabled = true;
         }
     }
 }

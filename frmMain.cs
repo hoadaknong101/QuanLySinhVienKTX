@@ -150,24 +150,28 @@ namespace QuanLySinhVienKTX
         {
             frmSinhVien frm = new frmSinhVien();
             frm.Show();
+            //frm.ShowDialog();
         }
 
         private void btnPhong_Click(object sender, EventArgs e)
         {
             frmPhong frm = new frmPhong();
-            frm.ShowDialog();
+            frm.Show();
+            //frm.ShowDialog();
         }
 
         private void btnHopDong_Click(object sender, EventArgs e)
         {
             frmHopDong frm = new frmHopDong();
-            frm.ShowDialog();
+            frm.Show();
+            //frm.ShowDialog();
         }
 
         private void btnNhanVien_Click(object sender, EventArgs e)
         {
             frmNhanVien frm = new frmNhanVien();
             frm.Show();
+            //frm.ShowDialog();
         }
     }
 }
