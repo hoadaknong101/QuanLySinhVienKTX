@@ -45,10 +45,11 @@ namespace QuanLySinhVienKTX
             this.label5 = new System.Windows.Forms.Label();
             this.txtSDT = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.txtLop = new System.Windows.Forms.RichTextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.cbbGioiTinh = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
+            this.btnXoa = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSinhVien)).BeginInit();
             this.SuspendLayout();
             // 
@@ -61,6 +62,7 @@ namespace QuanLySinhVienKTX
             this.dgvSinhVien.Name = "dgvSinhVien";
             this.dgvSinhVien.Size = new System.Drawing.Size(936, 297);
             this.dgvSinhVien.TabIndex = 0;
+            this.dgvSinhVien.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvSinhVien_CellClick);
             // 
             // btnThem
             // 
@@ -69,12 +71,13 @@ namespace QuanLySinhVienKTX
             this.btnThem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnThem.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(61)))), ((int)(((byte)(89)))));
-            this.btnThem.Location = new System.Drawing.Point(78, 511);
+            this.btnThem.Location = new System.Drawing.Point(49, 511);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(145, 56);
             this.btnThem.TabIndex = 4;
             this.btnThem.Text = "THÊM";
             this.btnThem.UseVisualStyleBackColor = true;
+            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
             // btnLuu
             // 
@@ -83,12 +86,13 @@ namespace QuanLySinhVienKTX
             this.btnLuu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLuu.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLuu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(61)))), ((int)(((byte)(89)))));
-            this.btnLuu.Location = new System.Drawing.Point(297, 511);
+            this.btnLuu.Location = new System.Drawing.Point(230, 511);
             this.btnLuu.Name = "btnLuu";
             this.btnLuu.Size = new System.Drawing.Size(145, 56);
             this.btnLuu.TabIndex = 5;
             this.btnLuu.Text = "LƯU";
             this.btnLuu.UseVisualStyleBackColor = true;
+            this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
             // 
             // btnHuy
             // 
@@ -97,12 +101,13 @@ namespace QuanLySinhVienKTX
             this.btnHuy.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnHuy.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnHuy.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(61)))), ((int)(((byte)(89)))));
-            this.btnHuy.Location = new System.Drawing.Point(516, 511);
+            this.btnHuy.Location = new System.Drawing.Point(592, 511);
             this.btnHuy.Name = "btnHuy";
             this.btnHuy.Size = new System.Drawing.Size(145, 56);
             this.btnHuy.TabIndex = 6;
             this.btnHuy.Text = "HỦY";
             this.btnHuy.UseVisualStyleBackColor = true;
+            this.btnHuy.Click += new System.EventHandler(this.btnHuy_Click);
             // 
             // btnDong
             // 
@@ -111,7 +116,7 @@ namespace QuanLySinhVienKTX
             this.btnDong.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDong.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDong.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(61)))), ((int)(((byte)(89)))));
-            this.btnDong.Location = new System.Drawing.Point(735, 511);
+            this.btnDong.Location = new System.Drawing.Point(773, 511);
             this.btnDong.Name = "btnDong";
             this.btnDong.Size = new System.Drawing.Size(145, 56);
             this.btnDong.TabIndex = 7;
@@ -239,15 +244,15 @@ namespace QuanLySinhVienKTX
             this.label6.TabIndex = 18;
             this.label6.Text = "Giới tính :";
             // 
-            // richTextBox1
+            // txtLop
             // 
-            this.richTextBox1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
-            this.richTextBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(61)))), ((int)(((byte)(89)))));
-            this.richTextBox1.Location = new System.Drawing.Point(712, 79);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(223, 94);
-            this.richTextBox1.TabIndex = 20;
-            this.richTextBox1.Text = "";
+            this.txtLop.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
+            this.txtLop.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(61)))), ((int)(((byte)(89)))));
+            this.txtLop.Location = new System.Drawing.Point(712, 79);
+            this.txtLop.Name = "txtLop";
+            this.txtLop.Size = new System.Drawing.Size(223, 94);
+            this.txtLop.TabIndex = 20;
+            this.txtLop.Text = "";
             // 
             // label7
             // 
@@ -282,16 +287,32 @@ namespace QuanLySinhVienKTX
             this.label8.TabIndex = 23;
             this.label8.Text = "DANH SÁCH SINH VIÊN";
             // 
+            // btnXoa
+            // 
+            this.btnXoa.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(61)))), ((int)(((byte)(89)))));
+            this.btnXoa.FlatAppearance.BorderSize = 3;
+            this.btnXoa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnXoa.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnXoa.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(61)))), ((int)(((byte)(89)))));
+            this.btnXoa.Location = new System.Drawing.Point(411, 511);
+            this.btnXoa.Name = "btnXoa";
+            this.btnXoa.Size = new System.Drawing.Size(145, 56);
+            this.btnXoa.TabIndex = 24;
+            this.btnXoa.Text = "XÓA";
+            this.btnXoa.UseVisualStyleBackColor = true;
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
+            // 
             // frmSinhVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(240)))), ((int)(((byte)(226)))));
             this.ClientSize = new System.Drawing.Size(960, 586);
+            this.Controls.Add(this.btnXoa);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.cbbGioiTinh);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.richTextBox1);
+            this.Controls.Add(this.txtLop);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.txtSDT);
             this.Controls.Add(this.label5);
@@ -335,9 +356,10 @@ namespace QuanLySinhVienKTX
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txtSDT;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.RichTextBox txtLop;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.ComboBox cbbGioiTinh;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Button btnXoa;
     }
 }

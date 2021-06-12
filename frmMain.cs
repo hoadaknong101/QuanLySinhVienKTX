@@ -160,12 +160,14 @@ namespace QuanLySinhVienKTX
 
         private void btnHopDong_Click(object sender, EventArgs e)
         {
-
+            frmHopDong frm = new frmHopDong();
+            frm.ShowDialog();
         }
 
         private void btnNhanVien_Click(object sender, EventArgs e)
         {
-
+            frmNhanVien frm = new frmNhanVien();
+            frm.Show();
         }
     }
 }
