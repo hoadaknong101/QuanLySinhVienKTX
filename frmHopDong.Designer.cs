@@ -29,13 +29,11 @@ namespace QuanLySinhVienKTX
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label8 = new System.Windows.Forms.Label();
             this.btnDong = new System.Windows.Forms.Button();
             this.btnHuy = new System.Windows.Forms.Button();
             this.btnXoa = new System.Windows.Forms.Button();
             this.btnThem = new System.Windows.Forms.Button();
-            this.dgvHopDong = new System.Windows.Forms.DataGridView();
             this.cbbPhong = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
             this.txtMSSV = new System.Windows.Forms.TextBox();
@@ -49,6 +47,7 @@ namespace QuanLySinhVienKTX
             this.txtHoTen = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.btnLuu = new System.Windows.Forms.Button();
+            this.dgvHopDong = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.dgvHopDong)).BeginInit();
             this.SuspendLayout();
             // 
@@ -122,28 +121,6 @@ namespace QuanLySinhVienKTX
             this.btnThem.Text = "THÊM";
             this.btnThem.UseVisualStyleBackColor = true;
             this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
-            // 
-            // dgvHopDong
-            // 
-            this.dgvHopDong.AllowUserToAddRows = false;
-            this.dgvHopDong.AllowUserToDeleteRows = false;
-            this.dgvHopDong.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.dgvHopDong.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.RoyalBlue;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvHopDong.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            this.dgvHopDong.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvHopDong.Location = new System.Drawing.Point(12, 165);
-            this.dgvHopDong.Name = "dgvHopDong";
-            this.dgvHopDong.ReadOnly = true;
-            this.dgvHopDong.Size = new System.Drawing.Size(661, 312);
-            this.dgvHopDong.TabIndex = 24;
-            this.dgvHopDong.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvHopDong_CellClick);
             // 
             // cbbPhong
             // 
@@ -293,11 +270,22 @@ namespace QuanLySinhVienKTX
             this.btnLuu.UseVisualStyleBackColor = true;
             this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
             // 
+            // dgvHopDong
+            // 
+            this.dgvHopDong.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dgvHopDong.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvHopDong.Location = new System.Drawing.Point(18, 169);
+            this.dgvHopDong.Name = "dgvHopDong";
+            this.dgvHopDong.Size = new System.Drawing.Size(645, 318);
+            this.dgvHopDong.TabIndex = 47;
+            this.dgvHopDong.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvHopDong_CellClick_1);
+            // 
             // frmHopDong
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(688, 566);
+            this.Controls.Add(this.dgvHopDong);
             this.Controls.Add(this.btnLuu);
             this.Controls.Add(this.txtHoTen);
             this.Controls.Add(this.label4);
@@ -316,7 +304,6 @@ namespace QuanLySinhVienKTX
             this.Controls.Add(this.btnHuy);
             this.Controls.Add(this.btnXoa);
             this.Controls.Add(this.btnThem);
-            this.Controls.Add(this.dgvHopDong);
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(240)))), ((int)(((byte)(226)))));
             this.Name = "frmHopDong";
             this.Text = "DANH SÁCH HỢP ĐỒNG";
@@ -334,7 +321,6 @@ namespace QuanLySinhVienKTX
         private System.Windows.Forms.Button btnHuy;
         private System.Windows.Forms.Button btnXoa;
         private System.Windows.Forms.Button btnThem;
-        private System.Windows.Forms.DataGridView dgvHopDong;
         private System.Windows.Forms.ComboBox cbbPhong;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox txtMSSV;
@@ -348,5 +334,6 @@ namespace QuanLySinhVienKTX
         private System.Windows.Forms.TextBox txtHoTen;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button btnLuu;
+        private System.Windows.Forms.DataGridView dgvHopDong;
     }
 }

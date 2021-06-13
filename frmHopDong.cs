@@ -147,5 +147,24 @@ namespace QuanLySinhVienKTX
             btnHuy.Enabled = true;
             btnXoa.Enabled = true;
         }
+
+        private void dgvHopDong_CellClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+            if (dgvHopDong.Rows.Count == 0)
+            {
+                MessageBox.Show("Dữ liêu trống", "Error");
+                return;
+            }
+            txtMaHD.Text = dgvHopDong.CurrentRow.Cells[0].Value.ToString();
+            txtMSSV.Text = dgvHopDong.CurrentRow.Cells[4].Value.ToString();
+            var HoTen = db.SinhViens.Find(int.Parse(dgvHopDong.CurrentRow.Cells[4].Value.ToString()));
+            txtHoTen.Text = HoTen.HoTen;
+            dtpBatDau.Value = DateTime.Parse(dgvHopDong.CurrentRow.Cells[1].Value.ToString());
+            dtpKetThuc.Value = DateTime.Parse(dgvHopDong.CurrentRow.Cells[2].Value.ToString());
+            cbbPhong.Text = dgvHopDong.CurrentRow.Cells[3].Value.ToString();
+            btnLuu.Enabled = true;
+            btnHuy.Enabled = true;
+            btnXoa.Enabled = true;
+        }
     }
 }
