@@ -72,7 +72,7 @@ namespace QuanLySinhVienKTX
 
         private void btnLuu_Click(object sender, EventArgs e)
         {
-            var sv = db.HopDongs.Find(txtMaHD.Text.Trim());
+            var sv = db.HopDongs.SingleOrDefault(m => m.MaHD == txtMaHD.Text.Trim());
             sv.NgayBD = DateTime.Parse(dtpBatDau.Value.ToString());
             sv.NgayKT = DateTime.Parse(dtpKetThuc.Value.ToString());
             sv.MSSV = int.Parse(txtMSSV.Text);

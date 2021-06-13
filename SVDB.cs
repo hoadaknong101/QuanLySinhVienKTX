@@ -17,6 +17,7 @@ namespace QuanLySinhVienKTX
         public virtual DbSet<Phong> Phongs { get; set; }
         public virtual DbSet<QuanLy> QuanLies { get; set; }
         public virtual DbSet<SinhVien> SinhViens { get; set; }
+        public virtual DbSet<sysdiagram> sysdiagrams { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

@@ -20,13 +20,10 @@ namespace QuanLySinhVienKTX
         [Column(TypeName = "date")]
         public DateTime? NgayKT { get; set; }
 
-        [Key]
-        [Column(Order = 1)]
-        [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public int SoPhong { get; set; }
 
         [Key]
-        [Column(Order = 2)]
+        [Column(Order = 1)]
         [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public int MSSV { get; set; }
 

@@ -92,6 +92,7 @@
     <Compile Include="Models\QuanLy.cs" />
     <Compile Include="Models\SinhVien.cs" />
     <Compile Include="SVDB.cs" />
+    <Compile Include="sysdiagram.cs" />
     <EmbeddedResource Include="frmHopDong.resx">
       <DependentUpon>frmHopDong.cs</DependentUpon>
     </EmbeddedResource>
@@ -116,7 +117,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <None Include="App.config" />
+    <None Include="App.Config" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
