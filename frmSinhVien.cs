@@ -111,7 +111,7 @@ namespace QuanLySinhVienKTX
         {
             var value = db.SinhViens.Find(int.Parse(txtMSSV.Text.Trim()));
             value.HoTen = txtHoTen.Text.Trim();
-            value.SĐT = int.Parse(txtHoTen.Text.Trim());
+            value.SĐT = txtHoTen.Text.Trim();
             value.NgaySinh = DateTime.Parse(dtpNgaySinh.Value.ToString("MM/dd/yyyy"));
             value.GioiTinh = cbbGioiTinh.Text;
             value.Lop = txtLop.Text;

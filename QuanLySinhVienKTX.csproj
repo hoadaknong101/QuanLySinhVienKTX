@@ -92,7 +92,6 @@
     <Compile Include="Models\QuanLy.cs" />
     <Compile Include="Models\SinhVien.cs" />
     <Compile Include="SVDB.cs" />
-    <Compile Include="Models\sysdiagram.cs" />
     <EmbeddedResource Include="frmHopDong.resx">
       <DependentUpon>frmHopDong.cs</DependentUpon>
     </EmbeddedResource>
@@ -129,8 +128,6 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
   </ItemGroup>
-  <ItemGroup>
-    <Content Include="Models\QuanLySinhVienKTX.sql" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

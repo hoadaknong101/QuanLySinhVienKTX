@@ -17,7 +17,6 @@ namespace QuanLySinhVienKTX
         public virtual DbSet<Phong> Phongs { get; set; }
         public virtual DbSet<QuanLy> QuanLies { get; set; }
         public virtual DbSet<SinhVien> SinhViens { get; set; }
-        public virtual DbSet<sysdiagram> sysdiagrams { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
@@ -28,6 +27,10 @@ namespace QuanLySinhVienKTX
             modelBuilder.Entity<NhanVien>()
                 .Property(e => e.MaNV)
                 .IsUnicode(false);
+
+            modelBuilder.Entity<NhanVien>()
+                .Property(e => e.SDT)
+                .IsFixedLength();
 
             modelBuilder.Entity<NhanVien>()
                 .HasMany(e => e.QuanLies)
@@ -47,6 +50,10 @@ namespace QuanLySinhVienKTX
             modelBuilder.Entity<QuanLy>()
                 .Property(e => e.MaNV)
                 .IsUnicode(false);
+
+            modelBuilder.Entity<SinhVien>()
+                .Property(e => e.SDT)
+                .IsFixedLength();
 
             modelBuilder.Entity<SinhVien>()
                 .Property(e => e.Lop)

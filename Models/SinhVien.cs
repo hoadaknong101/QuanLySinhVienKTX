@@ -27,7 +27,8 @@ namespace QuanLySinhVienKTX
         [Column(TypeName = "date")]
         public DateTime? NgaySinh { get; set; }
 
-        public int? SĐT { get; set; }
+        [StringLength(10)]
+        public string SDT { get; set; }
 
         [StringLength(10)]
         public string GioiTinh { get; set; }

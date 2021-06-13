@@ -31,7 +31,8 @@ namespace QuanLySinhVienKTX
         [StringLength(50)]
         public string ChucVu { get; set; }
 
-        public int? SDT { get; set; }
+        [StringLength(10)]
+        public string SDT { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<QuanLy> QuanLies { get; set; }
