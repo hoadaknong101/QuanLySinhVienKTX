@@ -79,7 +79,7 @@ namespace QuanLySinhVienKTX
                 HoTen = txtHoTen.Text.Trim(),
                 CMND = int.Parse(txtCMND.Text.Trim()),
                 NgaySinh = DateTime.Parse(dtpNgaySinh.Value.ToString("MM/dd/yyyy")),
-                SĐT = int.Parse(txtSDT.Text.Trim()),
+                SDT = txtSDT.Text.Trim(),
                 GioiTinh = cbbGioiTinh.Text.Trim(),
                 Lop = txtLop.Text.Trim()
             };
@@ -111,7 +111,7 @@ namespace QuanLySinhVienKTX
         {
             var value = db.SinhViens.Find(int.Parse(txtMSSV.Text.Trim()));
             value.HoTen = txtHoTen.Text.Trim();
-            value.SĐT = txtHoTen.Text.Trim();
+            value.SDT = txtSDT.Text.Trim();
             value.NgaySinh = DateTime.Parse(dtpNgaySinh.Value.ToString("MM/dd/yyyy"));
             value.GioiTinh = cbbGioiTinh.Text;
             value.Lop = txtLop.Text;

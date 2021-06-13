@@ -55,7 +55,7 @@ namespace QuanLySinhVienKTX
                 HoTen = txtHoTen.Text.Trim(),
                 NgaySinh = DateTime.Parse(dtpNgaySinh.Value.ToString("MM/dd/yyyy")),
                 DiaChi = txtDiaChi.Text.Trim(),
-                SDT = int.Parse(txtSDT.Text.Trim()),
+                SDT = txtSDT.Text.Trim(),
                 ChucVu = txtChucVu.Text.Trim()
             };
             db.NhanViens.Add(nv);
@@ -70,7 +70,7 @@ namespace QuanLySinhVienKTX
             mod.NgaySinh = DateTime.Parse(dtpNgaySinh.Value.ToString("MM/dd/yyyy"));
             mod.DiaChi = txtDiaChi.Text.Trim();
             mod.ChucVu = txtChucVu.Text.Trim();
-            mod.SDT = int.Parse(txtSDT.Text.Trim());
+            mod.SDT = txtSDT.Text.Trim();
             db.SaveChanges();
             LoadData();
             btnHuy.Enabled = false;

@@ -131,9 +131,10 @@ namespace QuanLySinhVienKTX
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(61)))), ((int)(((byte)(89)))));
             this.label1.Location = new System.Drawing.Point(29, 84);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(58, 17);
+            this.label1.Size = new System.Drawing.Size(53, 17);
             this.label1.TabIndex = 8;
-            this.label1.Text = "MSSV :";
+            this.label1.Tag = "";
+            this.label1.Text = "MSSV ";
             // 
             // txtMSSV
             // 
@@ -152,9 +153,9 @@ namespace QuanLySinhVienKTX
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(61)))), ((int)(((byte)(89)))));
             this.label2.Location = new System.Drawing.Point(29, 120);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(62, 17);
+            this.label2.Size = new System.Drawing.Size(57, 17);
             this.label2.TabIndex = 10;
-            this.label2.Text = "Họ tên :";
+            this.label2.Text = "Họ tên ";
             // 
             // txtHoTen
             // 
@@ -173,9 +174,9 @@ namespace QuanLySinhVienKTX
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(61)))), ((int)(((byte)(89)))));
             this.label3.Location = new System.Drawing.Point(29, 156);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(113, 17);
+            this.label3.Size = new System.Drawing.Size(108, 17);
             this.label3.TabIndex = 12;
-            this.label3.Text = "CMND/CCCD :";
+            this.label3.Text = "CMND/CCCD ";
             // 
             // txtCMND
             // 
@@ -195,9 +196,9 @@ namespace QuanLySinhVienKTX
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(61)))), ((int)(((byte)(89)))));
             this.label4.Location = new System.Drawing.Point(399, 83);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(81, 17);
+            this.label4.Size = new System.Drawing.Size(76, 17);
             this.label4.TabIndex = 14;
-            this.label4.Text = "Ngày sinh :";
+            this.label4.Text = "Ngày sinh ";
             // 
             // dtpNgaySinh
             // 
@@ -219,9 +220,9 @@ namespace QuanLySinhVienKTX
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(61)))), ((int)(((byte)(89)))));
             this.label5.Location = new System.Drawing.Point(399, 155);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(58, 17);
+            this.label5.Size = new System.Drawing.Size(53, 17);
             this.label5.TabIndex = 16;
-            this.label5.Text = "Số ĐT :";
+            this.label5.Text = "Số ĐT ";
             // 
             // txtSDT
             // 
@@ -240,9 +241,9 @@ namespace QuanLySinhVienKTX
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(61)))), ((int)(((byte)(89)))));
             this.label6.Location = new System.Drawing.Point(399, 119);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(73, 17);
+            this.label6.Size = new System.Drawing.Size(68, 17);
             this.label6.TabIndex = 18;
-            this.label6.Text = "Giới tính :";
+            this.label6.Text = "Giới tính ";
             // 
             // txtLop
             // 
@@ -259,11 +260,11 @@ namespace QuanLySinhVienKTX
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(61)))), ((int)(((byte)(89)))));
-            this.label7.Location = new System.Drawing.Point(648, 81);
+            this.label7.Location = new System.Drawing.Point(675, 81);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(58, 17);
+            this.label7.Size = new System.Drawing.Size(34, 17);
             this.label7.TabIndex = 21;
-            this.label7.Text = "Ghi chú";
+            this.label7.Text = "Lớp";
             // 
             // cbbGioiTinh
             // 
