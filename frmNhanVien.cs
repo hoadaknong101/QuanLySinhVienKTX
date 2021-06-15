@@ -96,7 +96,7 @@ namespace QuanLySinhVienKTX
         {
             if (MessageBox.Show("Bạn có chắc không ?", "Xóa", MessageBoxButtons.YesNo) == DialogResult.Yes)
             {
-                var x = db.NhanViens.Find(int.Parse(txtMSNV.Text.Trim()));
+                var x = db.NhanViens.Find(txtMSNV.Text.Trim());
                 db.NhanViens.Remove(x);
                 db.SaveChanges();
                 dgvNhanVien.ClearSelection();

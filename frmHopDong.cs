@@ -35,7 +35,7 @@ namespace QuanLySinhVienKTX
             cbbPhong.ValueMember = "Tang";
             Setting();
         }
-        private void Setting()
+        private void Setting() // Cài đặt thông tin các cột trước khi đưa lên DataGridView
         {
             dgvHopDong.Columns[0].HeaderText = "Mã HĐ";
             dgvHopDong.Columns[1].HeaderText = "Ngày bắt đầu";
@@ -49,10 +49,14 @@ namespace QuanLySinhVienKTX
             dgvHopDong.Columns[6].Visible = false;
         }
 
+        /// Xử lý các button
+        /// 
+        ///
         private void btnThem_Click(object sender, EventArgs e)
         {
-            var sv = new HopDong()
+            var sv = new HopDong() // Tạo đối tượng
             {
+                //Khởi tạo đổi tượng
                 MaHD = txtHoTen.Text,
                 NgayBD = DateTime.Parse(dtpBatDau.Value.ToString()),
                 NgayKT = DateTime.Parse(dtpKetThuc.Value.ToString()),
@@ -62,7 +66,7 @@ namespace QuanLySinhVienKTX
                 SinhVien = db.SinhViens.Find(int.Parse(txtMSSV.Text.Trim()))
             };
             db.HopDongs.Add(sv);
-            db.SaveChanges();
+            db.SaveChanges(); //Lưu vào cơ sở dữ liệu
             MessageBox.Show("Thêm thành công !!!", "Thông báo");
             LoadData();
             btnLuu.Enabled = false;
@@ -77,7 +81,7 @@ namespace QuanLySinhVienKTX
             sv.NgayKT = DateTime.Parse(dtpKetThuc.Value.ToString());
             sv.MSSV = int.Parse(txtMSSV.Text);
             sv.SoPhong = int.Parse(cbbPhong.Text);
-            db.SaveChanges();
+            db.SaveChanges();//Lưu vào cơ sở dữ liệu
             LoadData();
             btnLuu.Enabled = false;
             btnHuy.Enabled = false;
@@ -100,7 +104,7 @@ namespace QuanLySinhVienKTX
                         MaHD = txtMaHD.Text.ToString().Trim()
                     };
                     db.HopDongs.Remove(x);
-                    db.SaveChanges();
+                    db.SaveChanges();//Lưu vào cơ sở dữ liệu
                     LoadData();
                     btnLuu.Enabled = false;
                     btnHuy.Enabled = false;
@@ -128,6 +132,8 @@ namespace QuanLySinhVienKTX
         {
             this.Close();
         }
+
+        /// 
 
         private void dgvHopDong_CellClick(object sender, DataGridViewCellEventArgs e)
         {
